@@ -1,0 +1,47 @@
+.form_header{
+    font-style: italic;
+    font-weight: 800;
+    color: teal;
+    text-align: center;
+}
+
+.form_input{
+    box-shadow: 0 0 2px white;
+    border-radius: 5px;
+    float: right;
+    min-width: 400px;
+    min-height: 30px;
+    margin-right: 20px;
+
+}
+
+.form_label{
+    font-weight: 200;
+    padding: 10px;
+    padding-left: 0px;
+    font-size: 20px;
+}
+
+.form_info{
+    font-weight: 100;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.form_button{
+    width: 100%;
+    justify-content: center;
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    font-weight: 300;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.form_button:hover{
+    background-color: hsl(180, 100%, 35%);
+    transform: scale(1.02);
+}
+
