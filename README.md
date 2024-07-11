@@ -33,5 +33,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 # Calculator
 ## Hello everyone.
-This is a currency converter. The available currency exchange rate is as of 11 July 2024. It allows you to tranform currencies: Euro, USD, and GBP to Polish Zloty.
+This is a currency converter. The available currency exchange rate is as of 11 July 2024. It allows you to tranform currencies: Euro, USD, and GBP to Polish
 ### Click on the link to visit the website:
+https://adamgralak.github.io/calculator-react/
