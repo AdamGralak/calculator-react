@@ -22,3 +22,9 @@ body {
   background-size: cover;
   background-image: url("background.jpg");
 }
+
+@media (max-width: 767px) {
+  .app{
+    width: 80%;
+  }
+  }
