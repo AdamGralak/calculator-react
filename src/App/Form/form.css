@@ -5,6 +5,10 @@
     text-align: center;
 }
 
+.form_HeaderContent {
+    position: relative;
+}
+
 .form_input {
     box-shadow: 0 0 2px white;
     border-radius: 5px;
@@ -58,5 +62,5 @@
         font-size: 16px;
         font-weight: 70;
     }
-    
+
 }

@@ -1,6 +1,7 @@
 import { currencies } from "../currencies";
 import { useState } from "react";
 import { Result } from "./Result";
+import { Time } from "../Time";
 import React from "react";
 import './form.css'
 
@@ -8,16 +9,16 @@ export const Form = () => {
     const [result, setResult] = useState();
 
     const calculateResult = (amount, currency) => {
-      const rate = currencies
-        .find(({ short }) => short === currency)
-        .rate;
-  
-      setResult({
-        sourceAmount: +amount,
-        targetAmount: amount / rate,
-        currency,
-      });
-  
+        const rate = currencies
+            .find(({ short }) => short === currency)
+            .rate;
+
+        setResult({
+            sourceAmount: +amount,
+            targetAmount: amount / rate,
+            currency,
+        });
+
     }
 
     const [currency, setCurrency] = useState(currencies[0].short);
@@ -30,8 +31,11 @@ export const Form = () => {
 
     return (
         <>
-            <h1 className="form_header">Przelicznik walut </h1>
             <form onSubmit={onSubmit}>
+                <div className="form_HeaderContent">
+                    <h1 className="form_header">Przelicznik walut </h1>
+                    <Time />
+                </div>
                 <p className="form_label">
                     <label>
                         <span> Kwota w zł:</span>
@@ -74,6 +78,4 @@ export const Form = () => {
             </form>
         </>
     )
-
-
 };
