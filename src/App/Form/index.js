@@ -3,7 +3,8 @@ import { useState } from "react";
 import { Result } from "./Result";
 import { Time } from "../Time";
 import React from "react";
-import './form.css'
+import { StyledButton, StyledHeaderContent, StyledInfoParagraph,
+        StyledInput, StyledParagraph, StyledSelectInput } from "./styled";
 
 export const Form = () => {
     const [result, setResult] = useState();
@@ -32,15 +33,14 @@ export const Form = () => {
     return (
         <>
             <form onSubmit={onSubmit}>
-                <div className="form_HeaderContent">
-                    <h1 className="form_header">Przelicznik walut </h1>
+                <StyledHeaderContent>
+                    <h1>Przelicznik walut </h1>
                     <Time />
-                </div>
-                <p className="form_label">
+                </StyledHeaderContent>
+                <StyledParagraph>
                     <label>
                         <span> Kwota w zł:</span>
-                        <input
-                            className="form_input"
+                        <StyledInput
                             value={amount}
                             onChange={({ target }) => setAmount(target.value)}
                             placeholder="Wpsiz kwotę"
@@ -49,12 +49,11 @@ export const Form = () => {
                             type="number"
                         />
                     </label>
-                </p>
-                <p className="form_label">
+                </StyledParagraph>
+                <StyledParagraph>
                     <label>
                         <span>Waluta:</span>
-                        <select
-                            className="form_input"
+                        <StyledSelectInput
                             value={currency}
                             onChange={({ target }) => setCurrency(target.value)}
                         >
@@ -67,13 +66,13 @@ export const Form = () => {
                                 </option>
                             )))}
 
-                        </select>
+                        </StyledSelectInput>
                     </label>
-                </p>
+                </StyledParagraph>
                 <p>
-                    <button className="form_button">Przelicz</button>
+                    <StyledButton>Przelicz</StyledButton>
                 </p>
-                <p className="form_info">Kurs walut na dzień: 11 lipca 2024r.</p>
+                <StyledInfoParagraph>Kurs walut na dzień: 11 lipca 2024r.</StyledInfoParagraph>
                 <Result result={result} />
             </form>
         </>

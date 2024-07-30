@@ -1,9 +1,9 @@
 import React from "react";
-import './result.css'
+import { StyledParagraph } from "./styled";
 
 export const Result = ({ result }) => {
   return (
-    <p className="result">
+    <StyledParagraph>
       {result !== undefined && (
         <>
           {result.sourceAmount.toFixed(2)}&nbsp;PLN&nbsp;=
@@ -11,6 +11,6 @@ export const Result = ({ result }) => {
           {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
         </>
       )}
-    </p>
+    </StyledParagraph>
   );
 };

@@ -1,13 +1,13 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import './time.css';
+import { StyledParagraph } from "./styled";
 
 export const Time = () => {
     const [time, setTime] = useState(new Date());
 
     useEffect(() => {
         const intervalID = setInterval(() => {
-          tick();
+          setTime(new Date());;
         }, 1000);
       
         return () => {
@@ -15,11 +15,12 @@ export const Time = () => {
         };
       }, []);
 
-const tick = () => {
-    setTime(new Date());
-}
 
     return (
-        <p className="time">Aktualny czas:{time.toLocaleTimeString()}</p>
+        <StyledParagraph>Dziś jest:
+          {time.toLocaleDateString()} 
+          Godzina: 
+          {time.toLocaleTimeString()}
+          </StyledParagraph>
     )
 };

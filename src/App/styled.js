@@ -1,4 +1,6 @@
-.app {
+import styled from "styled-components";
+
+export const StyledDiv = styled.div`
   background-color: antiquewhite;
   flex-basis: 700px;
   box-shadow: 0px 0px 10px black;
@@ -9,4 +11,4 @@
   margin: 20px;
   border: 1px solid black;
   min-height: 200px;
-}
+`;

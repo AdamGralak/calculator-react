@@ -1,13 +1,12 @@
 import { Form } from './Form';
-import './App.css';
 import React from 'react';
+import { StyledDiv } from './styled';
 
 function App() {
-
   return (
-    <div className="app">
+    <StyledDiv>
       <Form />
-    </div>
+    </StyledDiv>
   );
 }
 
