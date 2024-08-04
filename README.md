@@ -33,6 +33,9 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 # Calculator
 ## Hello everyone.
-This is a currency converter. The available currency exchange rate is as of 11 July 2024. It allows you to tranform currencies: Euro, USD, and GBP to Polish
+This is a currency converter. 
+The available currency exchange rate is downland fron https://currencyapi.com/.
+This page allows us to convert different currency to American Dolar (UDS).
+The project was created using React.js. It employs data fetching from the server using the Axios library.
 ### Click on the link to visit the website:
 https://adamgralak.github.io/calculator-react/
