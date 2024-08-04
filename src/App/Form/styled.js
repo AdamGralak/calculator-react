@@ -55,7 +55,7 @@ export const StyledParagraph = styled.p`
 
 export const StyledInfoParagraph = styled.p`
   font-weight: 100;
-    font-size: 14px;
+    font-size: 11px;
     font-style: italic;
 `;
 
@@ -75,3 +75,16 @@ export const StyledButton = styled.button`
     transform: scale(1.02);   
     }
 `;
+
+export const StyledDiv = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  & > p {
+    color: teal;
+    padding: 20px;
+    text-align: center;
+  }
+`;
+

@@ -10,5 +10,5 @@ export const StyledDiv = styled.div`
   padding: 30px;
   margin: 20px;
   border: 1px solid black;
-  min-height: 200px;
+  min-height: 100px;
 `;

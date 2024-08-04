@@ -1,3 +1,7 @@
+import { createGlobalStyle } from "styled-components";
+import backgroundImage from './background.jpg';
+
+export const GlobalStyle = createGlobalStyle`
 html {
   box-sizing: border-box;
 }
@@ -20,11 +24,7 @@ body {
   min-height: 100vh;
   background-position: center;
   background-size: cover;
-  background-image: url("background.jpg");
+  background-image: url(${backgroundImage});;
 }
 
-@media (max-width: 767px) {
-  .app{
-    width: 80%;
-  }
-  }
+`;
