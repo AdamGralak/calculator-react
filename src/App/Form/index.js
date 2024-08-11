@@ -70,6 +70,7 @@ export const Form = () => {
                 placeholder="Wpisz kwotę"
                 required
                 step={0.01}
+                min={0.00}
                 type="number"
               />
             </label>
