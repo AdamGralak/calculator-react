@@ -1,41 +1,11 @@
-# Getting Started with Create React App
+# Currency Converter Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Currency Converter Calculator! This React application allows you to convert currency from USD to a selected currency using data fetched from [CurrencyAPI](https://currencyapi.com). It utilizes React hooks such as `useState` and `useEffect`, employs `async/await` for data fetching with `axios`, and displays the current time using `new Date()`.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-# Calculator
-## Hello everyone.
-This is a currency converter. 
-The available currency exchange rate is downland fron https://currencyapi.com/.
-This page allows us to convert different currency to American Dolar (UDS).
-The project was created using React.js. It employs data fetching from the server using the Axios library.
-### Click on the link to visit the website:
-https://adamgralak.github.io/calculator-react/
+- **Currency Conversion:** Convert USD to a selected currency from a list of checkboxes.
+- **Real-Time Data:** Fetch exchange rates from [CurrencyAPI](https://currencyapi.com) using `axios`.
+- **React Hooks:** Utilize `useState` and `useEffect` for state management and side effects.
+- **Async/Await:** Perform asynchronous data fetching.
+- **Current Time Display:** Show the current time using `new Date()`.

@@ -63,7 +63,7 @@ export const Form = () => {
           </StyledHeaderContent>
           <StyledParagraph>
             <label>
-              <span>Kwota w zł:</span>
+              <span>Kwota w USD:</span>
               <StyledInput
                 value={amount}
                 onChange={({ target }) => setAmount(target.value)}
