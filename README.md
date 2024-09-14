@@ -12,4 +12,4 @@ Welcome to the Currency Converter Calculator! This React application allows you 
 
 ## Demo:
 
-[CalculatorReact](adamgralak.github.io/calculator-react/)
+Feel free to check it out at: https://adamgralak.github.io/calculator-react/
