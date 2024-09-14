@@ -9,3 +9,7 @@ Welcome to the Currency Converter Calculator! This React application allows you 
 - **React Hooks:** Utilize `useState` and `useEffect` for state management and side effects.
 - **Async/Await:** Perform asynchronous data fetching.
 - **Current Time Display:** Show the current time using `new Date()`.
+
+## Demo:
+
+[CalculatorReact](adamgralak.github.io/calculator-react/)
